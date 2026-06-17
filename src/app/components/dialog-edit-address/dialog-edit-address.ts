@@ -1,21 +1,18 @@
-import { ChangeDetectionStrategy, Component, inject, model, signal, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {
   MAT_DIALOG_DATA,
-  MatDialog,
   MatDialogActions,
-  MatDialogClose,
   MatDialogContent,
   MatDialogRef,
   MatDialogTitle,
-  MatDialogModule,
 } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { UserIF } from '../../models/user-interface.class';
-import { Firestore, collection, addDoc, doc, updateDoc } from '@angular/fire/firestore';
+import { Firestore, doc, updateDoc } from '@angular/fire/firestore';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 @Component({
   selector: 'app-dialog-edit-address',
